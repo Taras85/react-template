@@ -1,10 +1,10 @@
 import React from "react";
-// import s from './MyButton.module.css'
+import s from './MyInput.module.css'
 
-const MyInput =(props)=>{
+const MyInput =React.forwardRef((props, ref)=>{
     return(
-    <input className={} type="text" {...props}/>
+    <input ref={ref} className={s.myInput} type="text" {...props}/>
     )
-}
+})
 
 export default MyInput
